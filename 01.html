@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="89.css">
+    <style>
+        .back-button {
+            display: none; /* 初始时隐藏按钮 */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+        <div class="back-button">
+            <button id="backBtn">返回上一个网页</button>
+            <span id="countdown">3</span>秒后自动返回
+        </div>
+    </div>
+	
+	<script>
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault(); // 阻止表单默认提交行为
+
+            // 这里可以添加验证用户名和密码的逻辑
+            // ...
+
+            // 假设验证成功，显示返回按钮和开始倒数
+            document.querySelector('.back-button').style.display = 'block';
+            var countdown = 3;
+            var countdownInterval = setInterval(function() {
+                countdown--;
+                document.getElementById('countdown').textContent = countdown;
+                if (countdown === 0) {
+                    clearInterval(countdownInterval);
+                     window.location.href = "00.html"; // 修改为指向00.html
+                }
+            }, 1000);
+
+            // 用户点击返回按钮
+            document.getElementById('backBtn').onclick = function() {
+                clearInterval(countdownInterval); // 清除倒数计时器
+                 window.location.href = "00.html"; // 修改为指向00.html
+            };
+        };
+    </script>
+</body>
+</html>

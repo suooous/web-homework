@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+        /* 自定义CSS样式 */
+
+		 
+        body {
+            font-family: Arial, sans-serif;
+			background-image: url("背景01.jpg");
+			background-repeat: no-repeat; /* 图片不重复 */
+    		background-position: center; /* 图片居中 */
+   			 background-size: cover; /* 图片覆盖整个元素 */
+        }
+		body h1{
+			color:aliceblue;
+			}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .navbar ul li a:hover {
+            background-color: #555;
+        }
+
+/*导航栏*/
+		.navbar1 {
+    	overflow: hidden; /* 确保导航栏容器有足够的空间 */
+    	background-color: #333; /* 导航栏背景颜色 */
+    	color: white; /* 文本颜色 */
+		}
+
+		.navbar1 p {
+    	float: left; /* 将元素向左浮动 */
+    	display: inline; /* 确保元素显示为内联元素 */
+    	margin-right: 10px; /* 添加右外边距，以创建间距 */
+		}
+
+		.navbar1 p:last-child {
+    	float: right; /* 将最后一个元素向右浮动 */
+		}
+
+/* 第二个大部分*/
+
+		.module1 {
+			background-color: #f9f9f9; /* 模块背景颜色 */
+            padding: 20px;
+            border: 5px solid #ddd; /* 边框 */
+            border-radius: 5px; /* 圆角 */
+			
+			display: flex; /* 使用 flex 布局 */
+    		align-items: center; /* 垂直居中 */
+    		justify-content: space-between; /* 水平分布，两端对齐 */
+			
+			margin-bottom: 10px; /* 设置模块之间的垂直距离 */
+    		display: inline-block; /* 使模块成为内联块元素，可以在一行显示 */
+		}
+		.module {
+            background-color: #f9f9f9; /* 模块背景颜色 */
+            /*padding: 20px;
+            /*border: 5px solid #ddd; /* 边框 */
+            /*border-radius: 5px; /* 圆角 */
+            margin-bottom: 50px; /* ni置模块之间的垂直距离 */
+			
+			width: 1150px;
+			height:100px;
+			left:20px
+        }
+		
+
+		.module img {
+    	/*max-width: 10%; /* 图片最大宽度为模块宽度的100% */
+    	/*height: auto; /* 图片高度根据宽度自动调整 */
+		
+		width: 100%; /* 图片宽度为模块宽度的100% */
+    	height: 100%; /* 图片高度为模块高度的100% */
+    	
+		}
+
+		.module2 {
+			border: 5px solid #ddd; /* 边框 */
+            border-radius: 5px; /* 圆角 */
+			width : 1120px;
+			height: 100px;
+			align-items: center; /* 垂直居中 */
+			margin-bottom: 50px; /* ni置模块之间的垂直距离 */
+		}
+		.module2 img{
+			width: 100%; /* 图片宽度为模块宽度的100% */
+    		height: 100%; /* 图片高度为模块高度的100% */
+		}
+		
+		.module3 {
+			border: 5px solid #ddd; /* 边框 */
+            border-radius: 5px; /* 圆角 */
+			width : 1120px;
+			height: 100px;
+		}
+/* 四个图片*/
+		.main-content {
+				
+            display: flex;
+            justify-content: space-between; /* 在容器内均匀分配空间 */
+            gap: 20px; /* 添加模块之间的间隔 */
+            padding: 20px 0;
+    		/*align-items: flex-end; /* 使子元素在容器的下面对齐 */
+			/*width: 100%; /* 容器宽度为父元素的100% */
+    		/*height: 500px; /* 容器高度为500像素 */
+			margin-bottom: 10px
+			
+			
+        }
+
+		.main-content section {
+			
+			height: 200px; /* 设置所有 section 元素的高度为 100px */
+            flex-basis: calc(25% - 10px); /* 每个模块的宽度为容器宽度的25%，减去间隔
+            padding: 20px;
+            /*border: 10px solid #ddd; /* 边框 */
+            border-radius: 5px; /* 圆角 */
+			
+	
+        }
+		.section picture{
+			height:50px
+				
+		}
+
+		.gap {
+			margin-bottom: 80px;
+			}
+/**/
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+			background-color: #66923D
+        }
+
+		.footer a{
+			color:#989228
+		}
+		.main-content img {
+            width: 100%; /* 图片宽度为容器宽度 */
+            height: auto; /* 保持图片的原始宽高比 */
+			vertical-align: bottom; /* 使图片在容器的下面对齐 */
+			transition: transform  0.3s ease;
+		}
+		
+		.main-content img:hover {
+    	transform: scale(1.1); /* 鼠标悬停时图片放大110% */
+		}
+		
+		.navbar.right-top {
+            position: absolute; /* 设置导航栏为固定定位 */
+            top: 20px; /* 距离顶部20像素 */
+            right: 20px; /* 距离右侧20像素 */
+			background-color:aliceblue
+				
+			
+			
+        }
+		.navbar.right-top a{ 
+			color: black;
+			font-weight: bold; /* 设置字体加粗 */
+    		text-decoration: none; /* 取消链接下划线 */
+    		padding: 5px 10px; /* 设置链接的内部填充 */
+			
+			
+        }
+		
+		.navbar.right-top a:hover {
+    	background-color:blue; /* 鼠标悬停时设置链接的背景颜色 */
+    	color: white; /* 鼠标悬停时设置链接的字体颜色 */
+		}
+		
+
+		
+		.section-news {
+			border: 10px solid #2975AF;
+    		background-color:#F5B188; /* 最新新闻部分的背景色 */
+		}
+
+		.section-drivers {
+			border: 10px solid #8BDE75;
+    		background-color:#D5E9A7; /* 车手与车队部分的背景色 */
+		}
+
+		.section-schedule {
+			border: 10px solid #DEE766;
+    		background-color:#BDF0EE; /* 赛季赛程部分的背景色 */
+		}
+
+		.section-standings {
+			border: 10px solid #D5A067;
+    		background-color:#E7CAF8; /* 积分榜部分的背景色 */
+		}
+		
+		.module1 {
+			
+			left:20px;
+			border: 10px solid #D5A067;
+		}
+		.module3 p {
+			text-indent: 2em;
+		}
